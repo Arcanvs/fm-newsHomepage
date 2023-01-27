@@ -13,7 +13,7 @@ const NewsList = () => {
         textContent: 'Private funding by VC firms is down 50% YOY. We take a look at what that means.'
     }]
   return (
-    <div>
+    <div className="newslist">
         <TitlePage typeTitle={2} styleClass={'news__h2'} text={'New'} />
         {
             newsData.map((news, index) => (

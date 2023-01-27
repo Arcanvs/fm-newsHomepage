@@ -1,3 +1,4 @@
+import logo from '../../assets/logo.svg'
 import NavUl from "../molecules/NavUl";
 
 export const Navbar = () => {
@@ -8,10 +9,10 @@ export const Navbar = () => {
                     {name: 'Categories', url: '/'}
                    ];
     return (
-        <div>
-            logo
+        <nav className="nav__menu">
+            <img src={logo} className="logo W" alt="Logo News HomePage" />
             <NavUl itemLi={itemLi} />
-        </div>
+        </nav>
     )
 }
 

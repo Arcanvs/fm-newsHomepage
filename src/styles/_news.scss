@@ -1,0 +1,42 @@
+.home__container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 165px;
+}
+.nav__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    img{
+        height: 40px;
+    }
+    ul{
+        list-style: none;
+        display: inline-flex;
+    }
+}
+.news__container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .bignews{
+        max-width: 730px;
+    }
+    .newslist{
+        max-width: 350px;
+    }
+}
+
+.post_container{
+    width: 100%;
+    justify-content: space-between;
+    display: inline-flex;
+    .post{
+        display: flex;
+        max-width: 350px;
+        img{
+            width: 100px;
+        }
+    }
+}

@@ -18,7 +18,7 @@ const PostList = () => {
         imgUrl: '/images/image-gaming-growth.jpg'
     }];
   return (
-    <div>
+    <>
         {
             dataPost.map((post, index) => (
                 <PostPage 
@@ -30,7 +30,7 @@ const PostList = () => {
                 />
             ))
         }
-    </div>
+    </>
   )
 }
 
