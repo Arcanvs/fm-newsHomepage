@@ -14,12 +14,14 @@ const NewsList = () => {
     }]
   return (
     <div className="newslist">
-        <TitlePage typeTitle={2} styleClass={'news__h2'} text={'New'} />
-        {
-            newsData.map((news, index) => (
-                <NewsPage key={index} textTitle={news.textTitle} textContent={news.textContent} />
-            ))
-        }
+        <div className="newslist__container">
+            <TitlePage typeTitle={2} styleClass={'news__h2'} text={'New'} />
+            {
+                newsData.map((news, index) => (
+                    <NewsPage key={index} textTitle={news.textTitle} textContent={news.textContent} />
+                ))
+            }
+        </div>
     </div>
   )
 }
