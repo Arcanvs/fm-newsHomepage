@@ -11,16 +11,22 @@ const BigNews = () => {
     
   return (
     <div className="bignews">
-        
-          <picture className='bignews__img'>
-            <source media='(max-width: 767px)' srcSet={imageWebMobile} />
-            <source media='(min-width: 768px)' srcSet={imageWebDesk} />
-            <img src={imageWebDesk} alt='Img Web' />
-          </picture>
-        <div>
+      <picture className='bignews__img'>
+        <source media='(max-width: 767px)' srcSet={imageWebMobile} />
+        <source media='(min-width: 768px)' srcSet={imageWebDesk} />
+        <img src={imageWebDesk} alt='Img Web' />
+      </picture>
+      <div className="bignews__container">
+        <div className="bignews__title">
           <TitlePage typeTitle={1} styleClass={'bignews__h1'} text={textTitle} />
-          <ParrafoPage styleClass={'bignews__parrafo'} text={textContent} />
         </div>
+        <div className="bignews__text">
+          <ParrafoPage styleClass={'bignews__parrafo'} text={textContent} />
+          <button>
+            READ MORE
+          </button>
+        </div>
+      </div>
     </div>
   )
 }

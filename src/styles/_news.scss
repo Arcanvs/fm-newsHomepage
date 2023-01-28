@@ -21,6 +21,19 @@
         align-items: center;
         margin: 0;
         padding: 0;
+        li{
+            margin: 0 0 0 19px;
+            a{
+                color: $Darkgrayishblue;
+                text-decoration: none;
+                &:hover{
+                    color: $Softred;
+                }
+            }
+        }
+        li:not(:last-child){
+            margin: 0 19px;
+        }
     }
 }
 .news__container{
@@ -33,20 +46,81 @@
     width: 100%;
     justify-content: space-between;
     display: inline-flex;
+    margin-top: 72px;
     .post{
         display: flex;
         max-width: 350px;
         img{
             width: 100px;
         }
+        .post__title{
+            padding-left: 24px;
+            .title__h3{
+                margin: 0;
+                font-size: 31px;
+                margin-top: 4px;
+                color: $Grayishblue;
+            }
+            .title__h4{
+                margin: 0;
+                font-size: 18px;
+                margin-top: 16px;
+                color: $Verydarkblue;
+                cursor: pointer;
+                &:hover{
+                    color: $Softred;
+                }
+            }
+            .title__parrafo{
+                font-size: 15px;
+                margin-top: 10px;
+                color: $Darkgrayishblue;
+            }
+        }
     }
 }
 // Section BigNews
 .bignews{
-    max-width: 730px;
+    width: 730px;
     .bignews__img{
         img{
             width: 100%;
+        }
+    }
+    .bignews__container{
+        display: flex;
+        justify-content: space-between;
+        .bignews__title{
+            width: 300px;
+            .bignews__h1{
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 56px;
+                margin-top: 28px;
+                margin-bottom: 0;
+                color: $Verydarkblue;
+            }
+        }
+        .bignews__text{
+            width: 350px;
+            .bignews__parrafo{
+                font-size: 15px;
+                margin-top: 25px;
+                margin-bottom: 36px;
+                color: $Darkgrayishblue;
+            }
+            button{
+                background-color: $Softred;
+                color: $Offwhite;
+                border: none;
+                height: 48px;
+                width: 185px;
+                letter-spacing: 5px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $Verydarkblue;
+                }
+            }
         }
     }
 }
@@ -70,11 +144,17 @@
             .news__h4{
                 margin: 0;
                 font-size: 20px;
+                color: $Offwhite;
+                cursor: pointer;
+                &:hover{
+                    color: $Softorange;
+                }
             }
             .news__text{
                 font-size: 15px;
                 margin-top: 10px;
                 margin-bottom: 32px;
+                color: $Grayishblue;
             }
         }
         .news:not(:last-child){
